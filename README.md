@@ -1,1 +1,1 @@
-# ubuntu2404-setup
+# dotfiles
