@@ -17,5 +17,4 @@ done
 
 echo "dotfiles installer: Done!"
 
-export GIT_PROGRESS=false
 zsh
