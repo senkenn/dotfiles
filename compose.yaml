@@ -5,4 +5,5 @@ services:
     tty: true
     volumes:
       - .:/workspace
+      - $HOME/.ssh:/home/ubuntu/.ssh
     working_dir: /workspace
