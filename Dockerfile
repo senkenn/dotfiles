@@ -7,6 +7,7 @@ ENV TZ=Asia/Tokyo
 RUN apt-get update && apt-get install -y --no-install-recommends \
   git \
   sudo \
+  systemd \
   tzdata \
   vim && \
   apt-get clean && \
@@ -18,4 +19,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN usermod -aG sudo ubuntu && \
   echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-USER ubuntu
+# Set the default command to run systemd
+CMD ["/lib/systemd/systemd"]

@@ -16,3 +16,10 @@ sudo apt-get update
 
 # Install Docker
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# Use docker command without sudo
+sudo usermod -aG docker "$(whoami)"
+
+# Enable Docker service
+sudo systemctl enable docker
+sudo systemctl start docker

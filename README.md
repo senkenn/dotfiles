@@ -1,5 +1,12 @@
 # dotfiles
 
+## Download
+
+```bash
+git clone git@github.com:senkenn/dotfiles.git
+cd dotfiles
+```
+
 ## Install
 
 ```bash
@@ -9,5 +16,5 @@
 ## Install with Docker
 
 ```bash
-docker compose up -d && docker compose exec -T app ./install.sh
+docker compose up -d && docker compose exec --user ubuntu app ./install.sh
 ```

@@ -3,7 +3,11 @@ services:
     build:
       context: .
     tty: true
-    volumes:
-      - .:/workspace
-      - $HOME/.ssh:/home/ubuntu/.ssh
     working_dir: /workspace
+    privileged: true # systemd に必要
+    volumes:
+      - .:/workspace:rw
+      - $HOME/.ssh:/home/ubuntu/.ssh:rw
+    tmpfs:
+      - /tmp
+      - /run
