@@ -23,7 +23,7 @@ for rc in "$current_dir"/rc/*.sh; do
 done
 
 # Change default shell to zsh
-sudo chsh -s "$(which zsh)" "$USER"
+sudo chsh -s "$(which zsh)" "$(whoami)"
 
 echo "dotfiles installer: Done!"
 

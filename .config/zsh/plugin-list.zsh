@@ -45,7 +45,3 @@ zinit light zsh-users/zsh-autosuggestions
 
 # fast-syntax-highlighting
 zinit light z-shell/F-Sy-H
-
-# pnpm completion
-zinit ice atload"zpcdreplay" atclone"./zplug.zsh" atpull"%atclone"
-zinit light g-plane/pnpm-shell-completion
