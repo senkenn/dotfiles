@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
-sudo apt update && sudo apt install -y curl zsh openssh-client zip
+set -e
+
+sudo apt update && sudo apt install -y curl zsh openssh-client zip build-essential
+
+current_dir=$(dirname "$(realpath "$0")")
+export current_dir
+zsh "$current_dir/.config/zsh/prezto.zsh"
 
 # zinit: plugin manager
 # https://github.com/zdharma-continuum/zinit
 yes | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-
-current_dir=$(dirname "$(realpath "$0")")
 
 # cp .config/* to "$HOME"
 mkdir -p "$HOME"/.config
