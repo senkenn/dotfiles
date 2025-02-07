@@ -1,0 +1,10 @@
+[Unit]
+Description=Key Remapper
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/home/senken/.cargo/bin/xremap /home/senken/.config/xremap/hotkey.yaml
+
+[Install]
+WantedBy=multi-user.target

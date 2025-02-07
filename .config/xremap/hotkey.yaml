@@ -1,0 +1,31 @@
+virtual_modifiers:
+  - KEY_HENKAN
+
+keymap:
+  - remap:
+      KEY_HENKAN-a: Shift-F10 # Application key
+      KEY_HENKAN-s: home
+      KEY_HENKAN-d: PageUp
+      KEY_HENKAN-f: PageDown
+      KEY_HENKAN-g: end
+      KEY_HENKAN-h: left
+      KEY_HENKAN-j: down
+      KEY_HENKAN-k: up
+      KEY_HENKAN-l: right
+      KEY_HENKAN-KEY_SEMICOLON: backspace
+      KEY_HENKAN-KEY_APOSTROPHE: delete
+      KEY_HENKAN-q: f1
+      KEY_HENKAN-w: f2
+      KEY_HENKAN-e: f3
+      KEY_HENKAN-r: f4
+      KEY_HENKAN-t: f5
+      KEY_HENKAN-y: f6
+      KEY_HENKAN-u: f7
+      KEY_HENKAN-i: f8
+      KEY_HENKAN-o: f9
+      KEY_HENKAN-p: f10
+      KEY_HENKAN-KEY_LEFTBRACE: f11
+      KEY_HENKAN-KEY_RIGHTBRACE: f12
+      KEY_HENKAN-space: esc
+      KEY_HENKAN-KEY_MUHENKAN: KEY_KATAKANAHIRAGANA
+      CapsLock: Ctrl_L
