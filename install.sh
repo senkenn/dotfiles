@@ -21,13 +21,16 @@ for config in "$current_dir"/.config/*; do
 done
 echo "source $current_dir/.config/zsh/.zshrc" >>"$HOME"/.zshrc
 
-# run commands in .config/rc
-for rc in "$current_dir"/rc/*.sh; do
-  bash "$rc"
+# install tools
+for script in "$current_dir"/install-scripts/*.sh; do
+  bash "$script"
 done
 
 # Change default shell to zsh
 sudo chsh -s "$(which zsh)" "$(whoami)"
+
+# no password for sudo
+echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers.d/"$(whoami)"
 
 echo "dotfiles installer: Done!"
 
