@@ -23,7 +23,10 @@ echo "source $current_dir/.config/zsh/.zshrc" >>"$HOME"/.zshrc
 
 # install tools
 for script in "$current_dir"/install-scripts/*.sh; do
-  bash "$script"
+  bash "$script" || {
+    echo "$script" failed.
+    exit 1
+  }
 done
 
 # Change default shell to zsh
