@@ -10,7 +10,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Contro
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Control><Super>Down']"
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>F8']" # Because it conflicts with "Alt + F8" in VSCode
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Print', '<Super><Shift>s']"
-gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Ctrl><Super>v', '<Super>m']"
 gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]" # previous setting: ['<Control>period', '<Control>semicolon']
 
 # UI
