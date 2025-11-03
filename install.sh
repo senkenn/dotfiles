@@ -5,8 +5,9 @@ set -e
 sudo apt update && sudo apt install -y curl zsh openssh-client zip build-essential
 
 current_dir=$(dirname "$(realpath "$0")")
-export current_dir
-zsh "$current_dir/.config/zsh/prezto.zsh"
+
+# prezto: configuration framework, aliases, functions, auto completion, ...
+zsh "$current_dir"/prompt-installing/prezto.zsh
 
 # zinit: plugin manager
 # https://github.com/zdharma-continuum/zinit
@@ -19,7 +20,7 @@ for config in "$current_dir"/.config/*; do
   [ -d "$HOME"/.config/"$(basename "$config")" ] && continue
   cp -r "$config" "$HOME"/.config
 done
-echo "source $current_dir/.config/zsh/.zshrc" >>"$HOME"/.zshrc
+echo "source $HOME/.config/zsh/.zshrc" >>"$HOME"/.zshrc
 
 # install tools
 for script in "$current_dir"/install-scripts/*.sh; do

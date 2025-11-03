@@ -23,3 +23,4 @@ sudo usermod -aG docker "$(whoami)"
 # Enable Docker service
 sudo systemctl enable docker
 sudo systemctl start docker
+newgrp docker
