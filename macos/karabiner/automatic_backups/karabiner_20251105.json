@@ -1120,6 +1120,7 @@
                     },
                     {
                         "description": "v1.6 Option+Shift+S → Command+Control+Shift+4 (スクリーンショット)",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
