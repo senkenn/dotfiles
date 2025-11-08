@@ -1,8 +1,16 @@
+keypress_delay_ms: 20
+
+modmap:
+  - name: global
+    remap:
+      Capslock: Ctrl_L
+
 virtual_modifiers:
   - KEY_HENKAN
 
 keymap:
-  - remap:
+  - name: "Henkan Key Remaps"
+    remap:
       KEY_HENKAN-a: Shift-F10 # Application key
       KEY_HENKAN-s: home
       KEY_HENKAN-d: PageUp
@@ -28,4 +36,3 @@ keymap:
       KEY_HENKAN-KEY_RIGHTBRACE: f12
       KEY_HENKAN-space: esc
       KEY_HENKAN-KEY_MUHENKAN: KEY_KATAKANAHIRAGANA
-      CapsLock: Ctrl_L
