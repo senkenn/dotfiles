@@ -2,11 +2,13 @@
 
 set -euo pipefail
 
-curl -fsSL https://get.pnpm.io/install.sh | env SHELL=/bin/zsh sh -
+volta install pnpm
 
 # Set up pnpm completion for zsh
 mkdir -p ~/.config/pnpm
 pnpm completion zsh > ~/.config/pnpm/completion-for-pnpm.zsh
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 cat << 'EOF' >> "$HOME/.zshrc"
 
 # pnpm completion
