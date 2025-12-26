@@ -13,12 +13,13 @@ zsh "$current_dir"/prompt-installing/prezto.zsh
 # https://github.com/zdharma-continuum/zinit
 yes | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
-# cp .config/* to "$HOME"
+# symlink .config/* to "$HOME"/.config
 mkdir -p "$HOME"/.config
 for config in "$current_dir"/.config/*; do
+  target="$HOME"/.config/"$(basename "$config")"
   # if exists, skip
-  [ -d "$HOME"/.config/"$(basename "$config")" ] && continue
-  cp -r "$config" "$HOME"/.config
+  [ -e "$target" ] && continue
+  ln -s "$config" "$target"
 done
 echo "source $HOME/.config/zsh/.zshrc" >>"$HOME"/.zshrc
 

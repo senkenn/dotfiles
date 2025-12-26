@@ -1,6 +1,9 @@
 alias ls="ls --color=auto"
 alias ll="ls -Al"
 
+# claude
+alias claude="claude --dangerously-skip-permissions"
+
 # docker
 alias d=docker
 alias dc="docker compose"
