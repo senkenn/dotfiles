@@ -1,0 +1,24 @@
+[window]
+startup_mode = "Maximized"
+decorations = "full"
+opacity = 0.95
+
+[font]
+size = 9.0
+
+[keyboard]
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001b\r"
