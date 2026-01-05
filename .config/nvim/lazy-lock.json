@@ -1,0 +1,7 @@
+{
+  "asyncomplete-lsp.vim": { "branch": "master", "commit": "63a9d75101c3133c3ed36a21f9e6b359e4e16150" },
+  "asyncomplete.vim": { "branch": "master", "commit": "17b654a87a834d4e835fb7467e562b4421ad9310" },
+  "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
+  "vim-lsp": { "branch": "master", "commit": "cdd07e0ef79949c65a182eab2f2120c9e91c25aa" },
+  "vim-lsp-settings": { "branch": "master", "commit": "3b95615e4c7c78e739285b49ce89b2d2c4bf3928" }
+}
