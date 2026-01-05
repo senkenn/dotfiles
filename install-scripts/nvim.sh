@@ -3,7 +3,11 @@
 set -e
 
 # Install Neovim
-sudo apt install -y neovim
+case "$(uname -s)" in
+  Darwin) brew install neovim ;;
+  Linux) sudo apt install -y neovim ;;
+  *) echo "Unsupported OS"; exit 1 ;;
+esac
 
 # Install lazy.nvim
 LAZY_PATH="$HOME/.local/share/nvim/lazy/lazy.nvim"
