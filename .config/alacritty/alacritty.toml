@@ -8,15 +8,6 @@ size = 9.0
 
 [keyboard]
 
-[[keyboard.bindings]]
-key = "C"
-mods = "Control"
-action = "Copy"
-
-[[keyboard.bindings]]
-key = "V"
-mods = "Control"
-action = "Paste"
 
 [[keyboard.bindings]]
 key = "Return"
