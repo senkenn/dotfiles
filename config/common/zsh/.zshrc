@@ -9,6 +9,11 @@ source "$HOME"/.config/zsh/alias.zsh
 source "$HOME"/.config/zsh/plugin-list.zsh
 
 #--------------------------------------------------------------#
+##          Completions                                       ##
+#--------------------------------------------------------------#
+source "$HOME"/.config/zsh/completions.zsh
+
+#--------------------------------------------------------------#
 ##          Powerlevel10k                                     ##
 #--------------------------------------------------------------#
 source "$HOME"/.config/zsh/.p10k.zsh
