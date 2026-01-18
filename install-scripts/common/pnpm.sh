@@ -2,7 +2,14 @@
 
 set -euo pipefail
 
-curl -fsSL https://get.pnpm.io/install.sh | sh -
+case "$(uname -s)" in
+  Darwin)
+    brew install pnpm
+    ;;
+  Linux)
+    sudo apt update && sudo apt install -y pnpm
+    ;;
+esac
 
 # Set up pnpm completion for zsh
 mkdir -p ~/.config/pnpm

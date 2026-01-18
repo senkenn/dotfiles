@@ -16,8 +16,4 @@ else
   exit 1
 fi
 
-echo "--> Configuring Ghostty..."
-mkdir -p ~/.config/ghostty
-ln -sf "$(dirname "$0")/../.config/ghostty/config" ~/.config/ghostty/config
-
 echo "=== Ghostty installation complete ==="
