@@ -35,7 +35,7 @@ for dir in common "$os_dir"; do
   done
 done
 
-echo "source $HOME/.config/zsh/.zshrc" >> "$HOME"/.zshrc
+ln -sf "$current_dir/config/common/zsh/.zshrc" "$HOME/.zshrc"
 
 # run install scripts (common + OS-specific)
 for dir in common "$os_dir"; do
