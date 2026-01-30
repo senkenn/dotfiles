@@ -1,3 +1,4 @@
 [tools]
+"github:trasta298/keifu" = "latest"
 node = "latest"
 pnpm = "latest"
